@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+body{
+    font: normal 16px Arial, Verdana, serif;
+    text-align: left;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: right;
+}
+p{
+    text-align: justify;
+    text-indent: 10px;//*Ele faz com que o inicio do texto recue de acordo com a valor que for colocado*
+}
+/*PROPRIEDADES DO SHORTHAND - CONFIGURAÇÃO DA FONTE EM UMA UNICA LINHA - COLOCAR NESSA ORDEM AQUI EMBAIXO
+font-style - font-weight - font-size -  font-family
+EX: font: italic bolder 3em 'work Sans', sans-serif;
+*/
