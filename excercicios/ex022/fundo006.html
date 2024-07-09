@@ -3,24 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body{
             height: 100vh;
-            background-color: black;
+           /* background-color: black;
+
             background-image: url('imagens/wallpaper002.jpg');
+
             background-position: center top;
+
             background-repeat: no-repeat;
-            /*background-size: contain;Faz com que a imagem seja 100% exibida sem distorção*/
-            background-size: cover;/*Faz a tela acompanhar o tamanha da pagina mesmo que tenha que cortar a imagem. A imagem de fundo acompanha o tamalho da tela*/
+
+            background-size: contain;Faz com que a imagem seja 100% exibida sem distorção
+
+            background-size: cover;/*Faz a tela acompanhar o tamanha da pagina mesmo que tenha que cortar a imagem. A imagem de fundo acompanha o tamalho da tela
+
+            background-attachment:scroll;Faz o fundo da imagem rolar junto com o conteudo
+
+            background-attachment: fixed; fixa o fundo da imagem mesmo rolando a tela*/
+
+
+            /*Shorthand - Encurtamento do Codigo - Seguir essa ordem
+            color > image > position > repeat > observação no: [size] > attachment*/
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover; /*O background-size: cover é o único que não funciona no Shorthand*/
             }
             main{
                 background-color: white;
-                width: 400px;
+                max-width: 700px;
+                text-align: justify;
+                text-indent: 2em;
+                line-height: 1.5em;
                 padding: 10px;
                 margin: auto;
                 border: 1px solid blue;
                 border-radius: 15px;
+            }
+            main >h1{
+                text-align: center;
             }
     </style>
 </head>
