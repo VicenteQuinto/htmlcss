@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de Imagens de Fundo</title>
     <style>
-        div.quadrado{
-            display: inline-block; /*Deixa os quadrados um do lado do outro*/
+        body{
+            background-image: url('imagens/wallpaper001.jpg');
+        }
+        div.quadrado {
+            display: inline-block;
+            /*Deixa os quadrados um do lado do outro*/
             border: 2px solid black;
             border-radius: 10px;
             background-color: lightslategray;
             width: 300px;
             height: 300px;
-    }
-    div#quadrado1{
-        background-color: skyblue;
+        }
 
-    }
-    div#quadrado2{
-        
-    }
-    div#quadrado3{
-        
-    }
+        div#quadrado1 {
+            background-color: skyblue;
+
+        }
+
+        div#quadrado2 {
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+
+        div#quadrado3 {
+            background-image: url('imagens/wallpaper002.jpg');/*Coloca a imagem no fundo do quadrado3*/
+        }
     </style>
 </head>
+
 <body>
     <div class="quadrado" id="quadrado1">
 
     </div>
-    <div class="quadrado" id="quandrado2">
+    <div class="quadrado" id="quadrado2">
 
     </div>
     <div class="quadrado" id="quadrado3">
 
     </div>
 
-    
+
 </body>
+
 </html>
