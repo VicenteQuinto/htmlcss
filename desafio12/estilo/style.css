@@ -7,11 +7,11 @@
 }
 
 :root{
---fonte-destaque:'Comici', cursive;
+--fonte-destaque:"Comic";
 
 }
 
 body{
     font-family: var(--fonte-destaque);
-    color: rgb(0, 255, 21);
+    color: rgb(51, 255, 0);
 }
