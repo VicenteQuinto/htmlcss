@@ -4,17 +4,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-* {
-    /*]Aqui sãos as configurações globais. Estamos zerando todas as configurações de todos os elementos.*/
-    margin: 0px;
-    padding: 0px;
-}
 
 :root{
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2:'Passion One', sans-serif;
     --fonte3:'Sriracha', cursive;
 }
+* {
+    /*]Aqui sãos as configurações globais. Estamos zerando todas as configurações de todos os elementos.*/
+    margin: 0px;
+    padding: 0px;
+}
+
+
 
 html, body {
     font-family: var(--fonte1);
