@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: Comic;
+    font-family: Comici;
     src: url(../fontes/comici.ttf) format('truetype');
     font-weight: normal;
 }
 
 :root{
---fonte-destaque:"Comic",cursive;
+--fonte-destaque:"Comic";
 
 }
 
