@@ -7,7 +7,7 @@
 }
 
 :root{
-    --fonte-destaque: "Comici";
+    --fonte-destaque: "Comici", italic;
 
 }
 
