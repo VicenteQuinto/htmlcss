@@ -1,1 +1,16 @@
 @charset "UTF-8";
+
+@font-face {
+    font-family: 'Comic';
+    src: url(../fontes/comici.ttf) format('truetype');
+    font-weight: normal;
+}
+
+:root{
+--fonte-destaque:"Comic";
+--fonte-padrão: sans-serif;
+}
+
+body{
+    font-family: var(--fonte-destaque);
+}
