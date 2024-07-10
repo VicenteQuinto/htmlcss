@@ -51,7 +51,7 @@ header>p {
 
 header a,
 footer a {
-    color: rgb(0, 255, 55);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     /*Tira o sublinhado do link*/
     font-weight: bolder;
