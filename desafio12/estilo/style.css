@@ -15,6 +15,7 @@
     /*]Aqui sãos as configurações globais. Estamos zerando todas as configurações de todos os elementos.*/
     margin: 0px;
     padding: 0px;
+    
 }
 
 
@@ -34,6 +35,7 @@ header {
 }
 
 header>h1 {
+    font-size: 10vw;/*Essa medida vw é um recurso para a fonte acomapnha o tamanho da tela.*/
     font-family: var(--fonte2);
     padding-top: 50px;
     /*text-transform: uppercase;Transforma todas as letras em MAIUSCULAS*/
@@ -62,6 +64,7 @@ footer a:hover {
 }
 
 section {
+    font-size: 3.5vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
@@ -84,7 +87,8 @@ section.imagem {
 }
 
 section.imagem>p {
-    width: 400px;
+    display: inline-block;
+    /*width: 400px;*/
     background-color: rgba(0, 0, 0, 0.295);
 
 
