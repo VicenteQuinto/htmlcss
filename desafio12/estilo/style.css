@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: Comici;
-    src: url(../fontes/comici.ttf) format('truetype');
+    src: url(./fontes/comici.ttf) format('truetype');
     font-weight: normal;
 }
 
