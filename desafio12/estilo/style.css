@@ -7,11 +7,19 @@
 }
 
 :root{
-    --fonte-destaque: "Comici", italic;
+    --fonte-destaque: "Comici";
 
 }
 
 body{
     font-family: var(--fonte-destaque);
     color: rgb(51, 255, 0);
+}
+
+header{
+    text-align: center;
+}
+
+header>h1{
+    margin-bottom: -10px;
 }
