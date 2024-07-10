@@ -8,12 +8,13 @@
 
 :root{
     --fonte-destaque: "Comici";
+    --cor01:#000000;
 
 }
 
 body{
     font-family: var(--fonte-destaque);
-    color: rgb(51, 255, 0);
+    color: var(--cor01);
 }
 
 header{
