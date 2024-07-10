@@ -1,26 +1,80 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: Comici;
-    src: url(../fontes/comici.ttf) format('truetype');
-    font-weight: normal;
+* {
+    /*]Aqui sãos as configurações globais. Estamos zerando todas as configurações de todos os elementos.*/
+    margin: 0px;
+    padding: 0px;
 }
 
-:root{
-    --fonte-destaque: "Comici";
-    --cor01:#000000;
-
+html,
+bady {
+    min-height: 100vh;
+    background-color: darkgray;
 }
 
-body{
-    font-family: var(--fonte-destaque);
-    color: var(--cor01);
-}
-
-header{
+header {
+    background-color: black;
+    color: white;
     text-align: center;
 }
 
-header>h1{
-    margin-bottom: -10px;
+header>h1 {
+    padding-top: 50px;
+    /*text-transform: uppercase;Transforma todas as letras em MAIUSCULAS*/
+    /*text-transform: lowercase;Transforma todas as letras em minusculas*/
+    font-variant: small-caps;
+    /*Transforma todas as letras em Maiusculas dando destaque para 1ª letra da palavra */
+}
+
+header>p {
+    padding-bottom: 50px;
+    /*Aumenta o tamanho do padding inferior do parágrafo*/
+}
+
+header a,
+footer a {
+    color: white;
+    text-decoration: none;
+    /*Tira o sublinhado do link*/
+    font-weight: bolder;
+    /*Deixa em negrito o texto do link*/
+}
+
+header a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;/*Espaçamento entre as linhas*/
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+    
+    
+}
+
+section.imagem{
+    background-color: rgb(43, 43, 43);
+    color: white;
+    
+}
+
+section.imagem>p{
+    width: 400px;
+    background-color:rgba(0, 0, 0, 0.295) ;
+   
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
