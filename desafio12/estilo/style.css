@@ -56,11 +56,15 @@ footer a {
     /*Tira o sublinhado do link*/
     font-weight: bolder;
     /*Deixa em negrito o texto do link*/
+    border-radius: 5px;
+    padding: 3px;
 }
 
 header a:hover,
 footer a:hover {
-    text-decoration: underline;
+    /*text-decoration: underline;*/
+    background-color: rgb(77, 77, 77);
+    transition: 0.5s;
 }
 
 section {
@@ -68,9 +72,14 @@ section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
-    line-height: 2em;
-    font-family: var(--fonte3);
-    /*Espaçamento entre as linhas*/
+    line-height: 1.5em;
+    font-family: var(--fonte3);/*Espaçamento entre as linhas*/
+    background-position: right center;
+    
+}
+
+section>p{
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -80,23 +89,38 @@ section.normal {
 
 }
 
-section.imagem {
+section.imagem{
     background-color: rgb(43, 43, 43);
     color: white;
+    box-shadow:inset 6px 6px 13px 0px rgba(0, 0, 0, 0.658);
+    background-size: cover;
+    background-attachment: fixed;
 
+}
+section#img1{
+    background-image: url('../imagens/background001.jpg');
+    
+}
+section#img2{
+    background-image: url('../imagens/background002.jpg');
+    
 }
 
 section.imagem>p {
     display: inline-block;
     /*width: 400px;*/
-    background-color: rgba(0, 0, 0, 0.295);
+    background-color: rgba(0, 0, 0, 0.61);
+    border-radius: 10px;
+    padding: 12px;
+    text-shadow: 1px 1px 0px black;
+   
 
 
 }
 
 footer {
     background-color: black;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px;
 }
