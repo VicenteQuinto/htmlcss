@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vie
+    wport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+    <style>
+        iframe{
+            width: 500px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam hic, nulla cumque amet id mollitia sequi tenetur vitae non deleniti eos ipsum aliquam explicabo ratione ea in aut, quos fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consectetur aspernatur corporis exercitationem id quis dolorum vero assumenda dolorem, nemo, dolore harum dignissimos. Quam quos, cupiditate in aut accusantium similique!</p>
+    <iframe src="./extras/pagina004.html" frameborder="0" sandbox="sandbox" referrerpolicy="no-referrer"><!--Aqui esta escrito a questao de segurança para formularios. O sandbox bloqueia todo  equalquer outro site que esteja dentro do iframe tente fazer por exemplo cadastro de pessoas. O sandbox ativado com sandbox ele bloqueia qualqr capturação de informação. O referrerpolicy="no-referrer diz que o conteudo carregado dentro do iframe, não coletar nenhum tipo de informação.
+        Se eu quiser deixar que execute o formulario, devo colocar o sandbox="allow-same-origin". Faz com que p conteudo seja de mesma origem. O allow-forms permite formularios. O allow-script permite scripts. -->
+        <p>Sei mavegador não é compatível</p>
+    </iframe>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, temporibus? Animi, quae repudiandae sed officiis praesentium excepturi ipsam, est nihil commodi sequi enim repellat. Autem ratione expedita error tenetur nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro veniam atque eveniet, facilis, dignissimos delectus, eos ratione aperiam beatae sequi tempora excepturi fugiat dolorum maxime illo aliquam amet animi. Voluptas. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe sint perferendis cupiditate itaque quam nulla ab nemo explicabo, quasi sed ipsum odio atque voluptatum quibusdam similique vero sit corporis expedita.</p>
+    
+</body>
+</html>
