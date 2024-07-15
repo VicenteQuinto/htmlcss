@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABELAS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        /*tr.destaque{Configuração para linha
+            background-color: green;
+        }*/
+
+        col.cnome{
+            background-color: greenyellow;
+        }
+        col.cgrupo{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercico Tabela</h1>
+   
+    <table>
+        <colgroup><!--Você selecionar tipo uma coluna inteira sem precisar fazer a configuração de item por intem-->
+            <col class="cnome">
+            <col class="cgrupo" span="2"><!--Faz com quê eu configure 2 colunas ao mesmo tempo-->
+            <!--<col class="csexo">
+            <col class="cidade">-->
+            <col class="cprofissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Jose Paulo</td>
+            <td>M</td>
+            <td>35</td>
+            <td>Pedreiro</td>
+        </tr>
+        <tr>
+            <td >Vagner Souza</td>
+            <td>M</td>
+            <td>27</td>
+            <td>Médico</td>
+        </tr>
+        <tr>
+            <td>Tabata Amaral</td>
+            <td>F</td>
+            <td>37</td>
+            <td>Fisoterapeuta</td>
+        </tr>
+        <tr>
+            <td>Claudia Augusta</td>
+            <td>F</td>
+            <td>55</td>
+            <td>Dona de Casa</td>
+        </tr>
+
+
+
+
+
+    </table>
+    
+</body>
+</html>
