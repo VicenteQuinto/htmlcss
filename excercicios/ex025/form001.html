@@ -13,15 +13,17 @@
 <body>
     <h1>Meu Primeiro Formulário</h1>
     <!--Todo formulario tem que está entre as tags <form> e </form>-->
-    <form>
+    <!--O Autocomplete "off" faz com que o furmulario não apresente a complementação de texto ao digitar. Coloca se quiser.-->
+    <form action="cadastro.php" autocomplete="off">
         <!--O input text faz criar uma caixinha para preenchimento de dados-->
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
         <!--Toda caixa de texto tem que ter nome e id-->
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
         <!--O input submit faz criar o botão de enviar. No caso os dados escritos.
         O valor "value" é o campo onde você tem que escrever por exemplo enviar, entrar, acessar.
-        -->
-        <p> <input type="submit" value="Enviar"></p>
+        Modifiquei o id="nome sobrenome para id="inome isobrenome" para apontar para o for da label-->
+        <p><input type="submit" value="Enviar"></p>
+        <!--Obs: Para enviar o cadastro para algum lugar, desvemos escolher com qual linguagem de programação vamos trabalhar e pra onde os dados irão ser enviados. Nessa caso vamos utilizar o PHP. Lá no form vamos colocar o action.-->
     </form>
     
 </body>
