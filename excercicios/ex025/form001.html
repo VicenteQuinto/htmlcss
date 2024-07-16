@@ -14,7 +14,7 @@
     <h1>Meu Primeiro Formulário</h1>
     <!--Todo formulario tem que está entre as tags <form> e </form>-->
     <!--O Autocomplete "off" faz com que o furmulario não apresente a complementação de texto ao digitar. Coloca se quiser.-->
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <!--O input text faz criar uma caixinha para preenchimento de dados-->
         <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
         <!--Toda caixa de texto tem que ter nome e id-->
@@ -24,6 +24,8 @@
         Modifiquei o id="nome sobrenome para id="inome isobrenome" para apontar para o for da label-->
         <p><input type="submit" value="Enviar"></p>
         <!--Obs: Para enviar o cadastro para algum lugar, desvemos escolher com qual linguagem de programação vamos trabalhar e pra onde os dados irão ser enviados. Nessa caso vamos utilizar o PHP. Lá no form vamos colocar o action.-->
+        <!--o method get ele coloca os dados na url. Utiliz-se o method gt quando os dados não forem sensiveis como (Nome, Telefone, Endereço, Nº de cartão, envio de arquivos e fotos). O limite de byts enviados pelo get é de 3000)-->
+        <!--O method post não deixa aparecer os dados na url. Utiliza-se em dados sensiveis como (Nº cartão de credito, senhas, nome, telefone, endereço, envio de arquivo e fotos. obs: estudar o meto mais seguro que o https)-->
     </form>
     
 </body>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 002</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <!--Geralmente o formulario é criado com div-->
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" placeholder="Nome do Usuário" autocomplete="username"><!--required significa campo obrigatorio-->
+            <!--Caso queira colocar a quantidade minima de letras ou numero basta colocar o comando minlength="". Se quiser colocar maximo o comando é  -->
+            <!--Pode-se também mudar o tamanho da caixa colocando o camando size-->
+            <!--O comando placeholder faz com que aparece uma dica para preenchimento da caixinha-->
+            <!-- O comando autocomplete dentro do input indica para o navegador que a caixa é de nome ou usuário entre outros. Serve para o nevegador autopreencher os dados-->
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="6" maxlength="8" placeholder="Senha" autocomplete="current-password">
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar"><!--Faz limpar a label-->
+    </form>
+    
+</body>
+</html>
