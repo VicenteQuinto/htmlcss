@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 005</title>
+</head>
+
+<body>
+    <h1>Teste de Formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasculino" value="M"><label for="imasculino">Masculino</label><br>
+            <input type="radio" name="sexo" id="ifeminino" value="F"><label for="ifeminino">Feminino</label>
+            <!--Para a marcação do radio (escolhe apenas uma opção) temos que colocar o mesmo nome no name para que as bolinhas sejam alternada. Nesse cado coloquei o nome sexo-->
+            <!--Se eu quiser que apareça marcado, coloco o comando checked ou na frente do id ou na frente do for-->
+        </fieldset>
+         <fieldset>
+            <legend>Esporte Favoritos</legend>
+            <input type="checkbox" name="esportefutebol" id="iesportefutebol" checked><label for="iesportefutebol"> Futebol</label> <br>
+            <input type="checkbox" name="esportebasquete" id="iesportebasquete"> <label for="iesportebasquete">Basquete</label> <br>
+            <input type="checkbox" name="esportetenis" id="iesportetenis"> <label for="iesportetenis">Tenis</label> <br>
+            <input type="checkbox" name="esportenatacao" id="iesportenatacao"> <label for="iesportenatacao">Natação</label> <br>
+         </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+
+</html>
