@@ -27,7 +27,7 @@ i#burguer{
     display: block;
     text-align: center;
     padding: 10px;
-    cursor: pointer;/*Muda o estilo do curso */
+    cursor: pointer;/*Muda o estilo do cursor */
 }
 
 i#burguer:hover{
