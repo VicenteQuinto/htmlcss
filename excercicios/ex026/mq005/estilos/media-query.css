@@ -8,7 +8,7 @@ Tablet: 768px até 992px
 Desktop: 992px até 1200px
 Grandes Telas: acima de 1200px
 */
-/*A partir desse tamanho, as configurações de menu serão outras para telas maiores*/
+/*A partir desse tamanho, as configurações de menu serão outras para telas maiores.Isso tudo aqui para telas maiores*/
 @media screen and (min-width:768px) {
     i#burguer{
         display: none;
