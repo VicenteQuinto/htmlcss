@@ -1,5 +1,155 @@
 @charset "UTF-8";
 /*Versão para todas as demais midias*/
+
+/*Typical Device Breakpoints
+----------------------------
+Pequenas Telas: até 600px
+Celular: de 600px atpe 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes Telas: acima de 1200px
+*/
+/*Impressoras*/
 @media print {
+    *{
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    main{
+        width: 90vw;
+        border: 1px solid black;
+    }
+
+    main::after{
+        content: 'Essa impressão foi desenvolvido por Curva Sistemas';
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+        
+    }
+
+    /*Faz aparecer com o comando display block a imagem para cada tamanho de tela*/
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: block;
+    }
+
+    img#desktop {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+
+}
+
+/*Pequenas Telas
+@media screen and (max-width:600px) {
     
+}
+Pequenas Celular
+@media screen and (min-width:600px) and (max-width:768px) {
+    
+}*/
+/*Para pequenas telas e celulares, já está configurado na styles.*/
+
+/*Vamos fazer para outras telas agora*/
+
+/*Tablets*/
+@media screen and (min-width:768px) and (max-width:992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    /*Faz aparecer com o comando display block a imagem para cada tamanho de tela*/
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: block;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#desktop {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+/*Desktops*/
+@media screen and (min-width:992px) and (max-width:1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    /*Faz aparecer com o comando display block a imagem para cada tamanho de tela*/
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#desktop {
+        display: block;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+/*Telas Grandes*/
+@media screen and (min-width:1200px) {
+    
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main{
+        background-color: rgba(0, 0, 0, 0.288);
+    }
+
+    /*Faz aparecer com o comando display block a imagem para cada tamanho de tela*/
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#desktop {
+        display: none;
+    }
+
+    img#tv {
+        display: block;
+    }
 }
