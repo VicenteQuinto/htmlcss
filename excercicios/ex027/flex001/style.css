@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+div.conteiner{
+    background-color: lightcoral;
+    display: flex;
+    /*O pai no caso o conteiner é que leva a configuração display:flex* Há outras configurações como abaixo/
+    /*Exitem 4 direções de flex-direction no pai
+
+    - CONFIGURAÇÃO PADRÃO: QUANDO NÃO MEXE EM NADA NAS CONFIGURAÇÕES -
+    > flex-direction:row; (sentido de leitura da esquerda para a direita)
+    > flex-direction: row-reverse; (sentido de leitura da direita para esquerda)
+    > flex-direction: column; (sentido de leitura de cima para baixo)
+    > flex-direction: column-reverse;(sentido de leitura de baixo para cima)
+
+    */
+
+    /*EIXOS
+    
+    - Se for flex-direction:row; 
+OBS1: SENTIDO DE LEITURA (ESQUERDA PARA A DIREITA)
+    (1º Eixo principal "main-axis" - Horizontal)
+    -O man-axis gera dois pontos
+    >Ponto inicial (man-start)
+    >Ponto final (man-end)
+OBS2: SENTIDO DA LEITURA (DE CIMA PARA BAIXO)    
+    (2º Eixo transversal "cross axis" - Vertical)
+    >Ponto Inicial (cross-star)
+    >Ponto Final (cross-end)
+
+    - Se for flex-direction:row-reverse;
+OBS1: SENTIDO LEITURA (DIREITA PARA ESQUERDA)
+    (1º Eixo principal "main-axis" - Horizontal)
+    -O man-axis gera dois pontos
+    >Ponto inicial (man-start)
+    >Ponto final (man-end)
+
+OBS2: SENTIDO DA LEITURA (DE CIMA PARA BAIXO)    
+    (2º Eixo transversal "cross axis" - Vertical)
+    >Ponto Inicial (cross-star)
+    >Ponto Final (cross-end)  
+    
+    - Se for flex-direction:colomn;
+OBS1: SENTIDO LEITURA (DE CIMA PARA BAIXO)
+    (1º Eixo principal "main-axis" - VERTICAL)
+    -O man-axis gera dois pontos
+    >Ponto inicial (man-start)
+    >Ponto final (man-end)
+
+OBS2: SENTIDO DA LEITURA (ESQUERDA PARA DIREITA)    
+    (2º Eixo transversal "cross axis" - HORIZONTAL)
+    >Ponto Inicial (cross-star)
+    >Ponto Final (cross-end) 
+
+
+    - Se for flex-direction:colomn-reverse;
+OBS1: SENTIDO LEITURA (DE BAIXO PARA CIMA)
+    (1º Eixo principal "main-axis" - VERTICAL)
+    -O man-axis gera dois pontos
+    >Ponto inicial (man-start)
+    >Ponto final (man-end)
+
+OBS2: SENTIDO DA LEITURA (ESQUERDA PARA DIREITA)    
+    (2º Eixo transversal "cross axis" - HORIZONTAL)
+    >Ponto Inicial (cross-star)
+    >Ponto Final (cross-end) 
+
+
+
+    */
+
+
+
+}
+div.item{
+    background-color: blue;
+    border: 1 px solid black;
+    text-align: center;
+    flex: auto;/*Se adapta como container. A div item se ajusta*/
+    
+}
