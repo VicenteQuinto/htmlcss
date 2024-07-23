@@ -3,11 +3,17 @@
 div.conteiner{
     background-color: lightcoral;
     display: flex;
-    justify-content: flex-star;
+    height: 300px;
+    flex-flow: row nowrap;
+    justify-content: space-around;/*O justify-content alinha os elementos no eixo horizontal*/
+    align-items: center; /*O align-items alinha os elementos no eixo vertical*/
+    
     /*O junstify-content vai fazer o alinhamento em relação ao main-axis(eixo principal)
     Existem 2 tipos de justify-content
     >flex-star (fica no inicio do eixo principal "main-start)
+
     >flex-end (fica no final do eixo principal "main-end")
+
     >flex-center(fica no centro do eixo principal "main-axis")
 
     ALINHAMENTO DE ESPAÇAMENTO
@@ -18,6 +24,17 @@ div.conteiner{
 
      <Justify-content: space-around ( Ele centraliza dentro do "conteiner" os itens dentro dos espaços iguais criados de acordo com a quantidade de itens para o "conteiner".
 
+
+     Align-items é sempre no eixo transversal (cross-axis)
+     OBS: Para ailinhar o no "cross axis" tem que dar uma aumentanda na altura do "conteirner". Quando aumenta a altura da um distanciamento entre o cross-start e o cross-end.
+     
+     >Align-items:stretch (esticar)
+     >Align-items:flex-start (ele sempre começara no inicio do eixo transversal ou seja no cross-star
+     >Align-items:flex-end  (ele sempre começara no final do eixo transversal ou seja no cross-end
+     >Align-items:flex-center (ele sempre começara no meio do eixo transversal)
+
+     OBS: O align-itens não tem a opção de espaçamento. 
+
     */
 
 
@@ -25,8 +42,8 @@ div.conteiner{
 }
 div.item{
     background-color: blue;
-    border: 1 px solid black;
+    border: 1px solid black;
     text-align: center;
-    flex: auto;/*Se adapta como container. A div item se ajusta*/
+    
     
 }
