@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+div.conteiner{
+    background-color: lightcoral;
+    display: flex;
+    justify-content: flex-star;
+    /*O junstify-content vai fazer o alinhamento em relação ao main-axis(eixo principal)
+    Existem 2 tipos de justify-content
+    >flex-star (fica no inicio do eixo principal "main-start)
+    >flex-end (fica no final do eixo principal "main-end")
+    >flex-center(fica no centro do eixo principal "main-axis")
+
+    ALINHAMENTO DE ESPAÇAMENTO
+    >Justify-content: space-between (Ele coloca o 1º item no main-star e o último item no main-end)
+    OBS: Todos os outros itens irão estar no meio ou com espaçamento iguais entre eles.
+
+     >Justify-content: space-evenly (Ele não gruda o 1º e o último elemento nas extremidades do "conteiner". Ele coloca antes, entre e depois dos itens os mesmos espaçamentos iguais).
+
+     <Justify-content: space-around ( Ele centraliza dentro do "conteiner" os itens dentro dos espaços iguais criados de acordo com a quantidade de itens para o "conteiner".
+
+    */
+
+
+
+}
+div.item{
+    background-color: blue;
+    border: 1 px solid black;
+    text-align: center;
+    flex: auto;/*Se adapta como container. A div item se ajusta*/
+    
+}
