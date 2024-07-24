@@ -5,6 +5,7 @@
 }
 div.conteiner{
     background-color: lightcoral;
+    height: 150px;
     display: flex;
     flex-flow: row wrap;
 
