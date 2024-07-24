@@ -20,15 +20,11 @@ main{
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-
-    
-
-
 }
+
 section{
     background-color: lightseagreen;
     width: 200px;
     height: 200px;
-
+    text-align: center;
 }
-

@@ -4,7 +4,7 @@ div.conteiner{
     background-color: lightcoral;
     display: flex;
     height: 300px;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;/*O justify-content alinha os elementos no eixo horizontal*/
     align-items: center; /*O align-items alinha os elementos no eixo vertical*/
     
