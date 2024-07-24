@@ -9,6 +9,7 @@
 
 body{
     background-color: lightsalmon;
+ 
 }
 main{
     background-color: lightgreen;
@@ -28,7 +29,9 @@ section{
     background-color: lightseagreen;
     width: 200px;
     height: 200px;
-   
+    flex-wrap: wrap;
     
 
+
 }
+
